@@ -1,0 +1,12 @@
+{
+    "min_instances": 0,
+    "max_instances": 1,
+    "resource_limits": {
+        "cpu": "1",
+        "memory": "2Gi"
+    },
+    "env_variables": {
+        "GOOGLE_CLOUD_LOCATION": "global",
+        "GOOGLE_GENAI_USE_VERTEXAI": "1"
+    }
+}

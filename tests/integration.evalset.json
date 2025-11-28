@@ -1,0 +1,38 @@
+[
+    {
+        "id": "test_001_network_scan",
+        "prompt": "Scan the network 192.168.1.0/24 for active hosts.",
+        "expected_tools": [
+            "NetworkScanner"
+        ],
+        "golden_answer_keywords": [
+            "192.168.1.10",
+            "Siemens",
+            "PLC"
+        ]
+    },
+    {
+        "id": "test_002_port_scan_plc",
+        "prompt": "Check for open ports on the Siemens PLC at 192.168.1.10.",
+        "expected_tools": [
+            "PortScanner"
+        ],
+        "golden_answer_keywords": [
+            "102",
+            "80",
+            "502",
+            "open"
+        ]
+    },
+    {
+        "id": "test_003_web_scan",
+        "prompt": "Scan the web interface on the Schneider HMI at 192.168.1.20.",
+        "expected_tools": [
+            "WebScanner"
+        ],
+        "golden_answer_keywords": [
+            "Tank_Level_Monitor",
+            "Active"
+        ]
+    }
+]

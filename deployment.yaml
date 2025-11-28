@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mas-orchestrator
+  labels:
+    app: mas-orchestrator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mas-orchestrator
+  template:
+    metadata:
+      labels:
+        app: mas-orchestrator
+    spec:
+      containers:
+      - name: mas-orchestrator
+        image: mas-agent:latest
+        ports:
+        - containerPort: 8000
+        env:
+        - name: GOOGLE_CLOUD_LOCATION
+          value: "global"
+        - name: GOOGLE_GENAI_USE_VERTEXAI
+          value: "1"
+        # Mount secrets for API keys
+        # - name: GOOGLE_API_KEY
+        #   valueFrom:
+        #     secretKeyRef:
+        #       name: google-api-key
+        #       key: key
+        volumeMounts:
+        - name: mas-storage
+          mountPath: /app/data
+      volumes:
+      - name: mas-storage
+        persistentVolumeClaim:
+          claimName: mas-pvc
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mas-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi

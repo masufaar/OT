@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  mas-orchestrator:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - GOOGLE_CLOUD_LOCATION=global
+      - GOOGLE_GENAI_USE_VERTEXAI=1
+      # In a real scenario, you'd mount secrets or use a secrets manager
+      # - GOOGLE_API_KEY=${GOOGLE_API_KEY} 
+    volumes:
+      - ./mas.db:/app/mas.db # Persist the database
+      - ./logs:/app/logs # Persist logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/.well-known/agent-card.json"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

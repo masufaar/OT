@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+.env
+.venv
+
+# Logs and Databases
+*.log
+logs/
+*.db
+*.sqlite
+
+# Testing
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.pytest_cache/
+.mypy_cache/
+
+# Project Specific Generated Files
+output.log
+error.log
+*.pdf
+efficiency_report.md
+final_report.md
+refined_remediation_report.pdf
+assessment_report.pdf
+quality_framework_report.md
+quality_framework_report.pdf
+golden_sets/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

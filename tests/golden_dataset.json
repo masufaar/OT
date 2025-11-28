@@ -1,0 +1,23 @@
+{
+  "eval_set_id": "network_scanner_golden_set",
+  "eval_cases": [
+    {
+      "eval_id": "scan_local_subnet",
+      "input": "Scan the network 192.168.1.0/24",
+      "expected_output_contains": [
+        "192.168.1.1",
+        "192.168.1.10",
+        "192.168.1.20"
+      ],
+      "expected_tool_calls": ["scan_network"]
+    },
+    {
+      "eval_id": "scan_single_host",
+      "input": "Scan host 10.0.0.5",
+      "expected_output_contains": [
+        "10.0.0.5"
+      ],
+      "expected_tool_calls": ["scan_network"]
+    }
+  ]
+}

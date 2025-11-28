@@ -1,0 +1,9 @@
+{
+    "thresholds": {
+        "response_match_score": 0.8,
+        "tool_trajectory_score": 0.7,
+        "max_latency_ms": 1000,
+        "max_tokens": 2000
+    },
+    "eval_model": "gemini-1.5-pro-latest"
+}
