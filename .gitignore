@@ -66,3 +66,9 @@ Thumbs.db
 # Documentation
 best_practices/
 Final System Polish.md
+walkthrough.md
+
+# Allowed Reports (Exceptions)
+!assessment_report.pdf
+!remediation_report.pdf
+!board_quality_report.md
