@@ -18,6 +18,7 @@ The OT Penetration Testing MAS has successfully transitioned from a prototype to
 3.  **Quality Assurance**:
     *   **Testing**: Comprehensive suite including unit tests, golden datasets, and dynamic network simulations.
     *   **Observability**: Structured logging and tracing for full auditability of agent actions.
+    *   **Validation**: **Critic Agent** implemented with multi-model support (`gemini-1.5-pro`) for independent report verification.
 
 ## Quality Metrics
 | Metric | Status | Details |
