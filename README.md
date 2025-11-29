@@ -3,8 +3,17 @@
 ## 📌 Overview
 The **OT Penetration Testing MAS** is an autonomous, multi-agent system designed to perform comprehensive security assessments of Operational Technology (OT) environments. It leverages a team of specialized AI agents to discover assets, identify vulnerabilities, and simulate exploitation in a controlled, safe manner.
 
-[![Watch the Demo](https://img.youtube.com/vi/oFEb1cM6eIs/0.jpg)](https://www.youtube.com/watch?v=oFEb1cM6eIs)
-[![Watch the Demo 2](https://img.youtube.com/vi/qYvpMzTdjEs/0.jpg)](https://www.youtube.com/watch?v=qYvpMzTdjEs)
+<div align="center">
+  <h3>A Mandate for Resilience</h3>
+  <a href="https://www.youtube.com/watch?v=oFEb1cM6eIs">
+    <img src="https://img.youtube.com/vi/oFEb1cM6eIs/0.jpg" alt="A Mandate for Resilience" width="600">
+  </a>
+  
+  <h3>Protecting Our Physical World</h3>
+  <a href="https://www.youtube.com/watch?v=qYvpMzTdjEs">
+    <img src="https://img.youtube.com/vi/qYvpMzTdjEs/0.jpg" alt="Protecting Our Physical World" width="600">
+  </a>
+</div>
 
 ## 🚀 Key Features
 *   **Multi-Agent Architecture**: Orchestrated team of specialized agents (Network, Port, Service, Web, SNMP, Nmap, Metasploit, ICS, Writer, Critic).
