@@ -124,4 +124,5 @@ python tests/simulate_constellations.py
 ## 📄 Documentation
 *   [Walkthrough](walkthrough.md): Detailed implementation log.
 *   [Board Quality Report](board_quality_report.md): Executive summary.
+*   [Final Project Report](final_report.pdf): Complete technical and strategic analysis.
 *   [Requirements Analysis](requirements_gap_analysis.md): Feature gap tracking.
