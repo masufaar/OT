@@ -65,10 +65,11 @@ class CriticAgent:
         """
         Simulates the LLM's critique logic.
         """
-        critique = "## Critic's Feedback\n"
+        critique = f"## Critic's Feedback (Model: {self.model_provider})\n"
         critique += "1. **Structure**: The draft mostly follows the template, but some sections could be more detailed.\n"
         critique += "2. **Tone**: The tone is generally professional, but avoid using passive voice in the Executive Summary.\n"
         critique += "3. **Completeness**: Ensure all placeholders (like {date}) are filled.\n"
+        critique += "4. **Safety Check**: Verified no PII or sensitive internal IPs are exposed in plain text.\n"
         return critique
 
     def _generate_simulated_refinement(self, draft: str, template: str) -> str:

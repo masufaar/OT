@@ -74,7 +74,8 @@ def main():
     msf_agent = MetasploitAgent(use_mock=True)
     ics_agent = IcsAgent(use_mock=True)
     writer_agent = WriterAgent(memory)
-    critic_agent = CriticAgent()
+    # Critic Agent uses a stronger model for validation
+    critic_agent = CriticAgent(model_provider="gemini-1.5-pro")
 
     console.print("[bold green]OT Pentesting MAS - Initialized[/bold green]")
     if args.auto_approve:
