@@ -64,10 +64,11 @@ The system operates in a **9-Phase Sequential Workflow**, orchestrated by the `R
 *   **Safety**: Strictly controlled via safety gates.
 
 ### 9. Reporting Phase
-*   **Agents**: `WriterAgent`, `CriticAgent` (Future)
+*   **Agents**: `WriterAgent`, `CriticAgent`
 *   **Role**: Synthesizes all findings into two reports:
     *   **Assessment Report**: Technical findings and risk matrix.
     *   **Remediation Report**: Strategic mitigation plan.
+*   **Quality Assurance**: The `CriticAgent` uses a **different LLM** (e.g., `gemini-1.5-pro`) to act as an independent "Editor-in-Chief", ensuring unbiased validation of the `WriterAgent`'s output.
 
 ## 🏗️ Architecture
 The system follows a **Hub-and-Spoke** architecture:
