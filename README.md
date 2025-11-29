@@ -121,8 +121,16 @@ pytest tests/
 python tests/simulate_constellations.py
 ```
 
-## 📄 Documentation
-*   [Walkthrough](walkthrough.md): Detailed implementation log.
-*   [Board Quality Report](board_quality_report.md): Executive summary.
-*   [Final Project Report](final_report.pdf): Complete technical and strategic analysis.
+## 📄 Documentation & Reports
+
+### 1. Board of Management (Non-IT)
+*   **[AS-IS Vulnerability Assessment Report](assessment_report.pdf)**: High-level risk assessment detailing existing vulnerabilities and operational risks (No remediation details).
+*   **[TO-BE Remediation & Strategy Report](remediation_report.pdf)**: Strategic roadmap, cost estimates, and mitigation strategies for decision makers.
+
+### 2. IT Management & Technical Team
+*   **[Final Technical Report](final_report.pdf)**: Complete technical analysis, exploit logs, and detailed findings.
+*   **[Board Quality Report](board_quality_report.md)**: System performance metrics, agent reliability, and quality assurance data.
+
+### 3. Project Artifacts
 *   [Requirements Analysis](requirements_gap_analysis.md): Feature gap tracking.
+*   [Walkthrough](walkthrough.md): Implementation log (Dev only).
