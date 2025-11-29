@@ -62,3 +62,6 @@ golden_sets/
 # OS
 .DS_Store
 Thumbs.db
+
+# Documentation
+best_practices/
